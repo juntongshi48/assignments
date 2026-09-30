@@ -127,6 +127,12 @@ def _run_training(
             "model_dir": str(MODAL_MODEL_DIR),
         }
     finally:
+        # train() only calls wandb.finish() on success. Close a crashed run here so the
+        # next input in this reused container does not log into it.
+        import wandb
+
+        if wandb.run is not None:
+            wandb.finish(exit_code=1)
         user_volume.commit()
 
 

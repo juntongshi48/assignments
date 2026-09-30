@@ -1,0 +1,213 @@
+=== p3_measuring_variation b
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-gJ3nmdZLv39ydmLm4obMzd
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 8 Modal training job(s) app='dl_alchemy-20260929-082502' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P48XM540ND7BXNPSE27SD6 run_name_suffix='p3b-v1'
+  job 1: call_id=fc-01M3P48XR7JATFC1542C8VXMZ1 run_name_suffix='p3b-v1'
+  job 2: call_id=fc-01M3P48XX134GKNYF1M4H1KFMS run_name_suffix='p3b-v1'
+  job 3: call_id=fc-01M3P48Y3EAN624BKVK8JDRX2B run_name_suffix='p3b-v1'
+  job 4: call_id=fc-01M3P48Y7AMRGYQMXJFANZ0V1J run_name_suffix='p3b-v1'
+  job 5: call_id=fc-01M3P48YB1CDE7FG53JNZ3E794 run_name_suffix='p3b-v1'
+  job 6: call_id=fc-01M3P48YF20H2E4EWHZQGMXA3V run_name_suffix='deterministic-reference-1'
+  job 7: call_id=fc-01M3P48YKXEDMB537FZ1Z7T1ZD run_name_suffix='deterministic-reference-2'
+Loaded train_dataset dclm: 9,600,000 rows (9,830,400,000 tokens) from /root/shared_data/datasets/dclm_9p6m_ctx1024_ds42/train.
+Loaded val_dataset dclm: 1,000 rows (1,024,000 tokens) from /root/shared_data/datasets/dclm_9p6m_ctx1024_ds42/val.
+Training on 600,000 sequences (614,400,000 tokens).
+Loaded train_dataset dclm: 9,600,000 rows (9,830,400,000 tokens) from /root/shared_data/datasets/dclm_9p6m_ctx1024_ds42/train.
+Trying to load model from /root/data/ckpts/model-d8-lr0.003-tok614M-deterministic-ms1-p3b-v1
+Exception: No native dl_alchemy model found at /root/data/ckpts/model-d8-lr0.003-tok614M-deterministic-ms1-p3b-v1.
+No model found at /root/data/ckpts/model-d8-lr0.003-tok614M-deterministic-ms1-p3b-v1; training from scratch
+Found 1 CUDA devices; using cuda:0
+Initializing native d8 model
+Loaded val_dataset dclm: 1,000 rows (1,024,000 tokens) from /root/shared_data/datasets/dclm_9p6m_ctx1024_ds42/val.
+Training on 600,000 sequences (614,400,000 tokens).
+Trying to load model from /root/data/ckpts/model-d8-lr0.003-tok614M-deterministic-ms2-p3b-v1
+Exception: No native dl_alchemy model found at /root/data/ckpts/model-d8-lr0.003-tok614M-deterministic-ms2-p3b-v1.
+No model found at /root/data/ckpts/model-d8-lr0.003-tok614M-deterministic-ms2-p3b-v1; training from scratch
+Found 1 CUDA devices; using cuda:0
+Initializing native d8 model
+Compiling training loss with torch.compile(mode='reduce-overhead')
+Compiling training loss with torch.compile(mode='reduce-overhead')
+[modal-client] 2026-09-29T01:25:16-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-gJ3nmdZLv39ydmLm4obMzd
+=== p4_amplification a
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-3474up6aAfvk3d0wBAdQ8O
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 1 Modal training job(s) app='dl_alchemy-20260929-082517' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P49CKHEJTQ8MPK795ZJSFS run_name_suffix='p4-v1'
+[modal-client] 2026-09-29T01:25:30-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-3474up6aAfvk3d0wBAdQ8O
+=== p4_amplification b
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-BQBYt9lh37fwqIaGQmUkJf
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 10 Modal training job(s) app='dl_alchemy-20260929-082533' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P49W9Z6FHPH6NSZX8HHCK8 run_name_suffix='p4-v1-noise1e-06-after1'
+  job 1: call_id=fc-01M3P49WEVMNCKSKSCY0JG52DR run_name_suffix='p4-v1-noise1e-06-after2000'
+  job 2: call_id=fc-01M3P49WK7XTCHTP3YDKAXT85E run_name_suffix='p4-v1-noise1e-06-after5000'
+  job 3: call_id=fc-01M3P49WQANR85HNBA35NX64FX run_name_suffix='p4-v1-noise1e-06-after8000'
+  job 4: call_id=fc-01M3P49WVDTRSH5FTM122V7HXQ run_name_suffix='p4-v1-noise1e-03-after1'
+  job 5: call_id=fc-01M3P49WZAV9C5SFVJMQMDA8JX run_name_suffix='p4-v1-noise1e-03-after2000'
+  job 6: call_id=fc-01M3P49X3V9DS8W1K5WC91EXNB run_name_suffix='p4-v1-noise1e-03-after5000'
+  job 7: call_id=fc-01M3P49X7PEY8K4VRYGP6J1S0E run_name_suffix='p4-v1-noise1e-03-after8000'
+  job 8: call_id=fc-01M3P49XBM6DBF8GRMGX8FNYR1 run_name_suffix='p4-v1-noise1e-07-after1'
+  job 9: call_id=fc-01M3P49XFF8ATECRFMVAY4KB1W run_name_suffix='p4-v1-noise1e-01-after5000'
+[modal-client] 2026-09-29T01:25:47-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-BQBYt9lh37fwqIaGQmUkJf
+=== p2_scaling_law_reliability a
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-xYXwBXaMbaXsc9wT4RaRm4
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 21 Modal training job(s) app='dl_alchemy-20260929-082553' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4AFVQN5B68JNXX142NAJ7 run_name_suffix='p2a-v1'
+  job 1: call_id=fc-01M3P4AFZS98EKA6711CX1Z2GM run_name_suffix='p2a-v1'
+  job 2: call_id=fc-01M3P4AG58MGDTHA0HPVM0FWSK run_name_suffix='p2a-v1'
+  job 3: call_id=fc-01M3P4AG969XST35SZBTFXSGD5 run_name_suffix='p2a-v1'
+  job 4: call_id=fc-01M3P4AGE2AWJQSXX0FSR19NET run_name_suffix='p2a-v1'
+  job 5: call_id=fc-01M3P4AGJFY9HSAG39VQA3HWH4 run_name_suffix='p2a-v1'
+  job 6: call_id=fc-01M3P4AGPGTDBM56A8S98SCNCA run_name_suffix='p2a-v1'
+  job 7: call_id=fc-01M3P4AGTENT0BWEGJG9VFVKKG run_name_suffix='p2a-v1'
+  job 8: call_id=fc-01M3P4AGYCE5RY82MDTK8F8MZF run_name_suffix='p2a-v1'
+  job 9: call_id=fc-01M3P4AH279EAH47JTPF996AHS run_name_suffix='p2a-v1'
+  job 10: call_id=fc-01M3P4AH6JKD6TD8B26MKGM0A8 run_name_suffix='p2a-v1'
+  job 11: call_id=fc-01M3P4AHA57Z3VN69AC8M5HBRE run_name_suffix='p2a-v1'
+  job 12: call_id=fc-01M3P4AHEBF1CFJM9RMXKS233M run_name_suffix='p2a-v1'
+  job 13: call_id=fc-01M3P4AHJF139CDT0YMNGHY22D run_name_suffix='p2a-v1'
+  job 14: call_id=fc-01M3P4AHPKRCMCTWT977C2P6W5 run_name_suffix='p2a-v1'
+  job 15: call_id=fc-01M3P4AHTP88P6854ETKEDF3C9 run_name_suffix='p2a-v1'
+  job 16: call_id=fc-01M3P4AHYF6JRXW2JZMP2ATC1B run_name_suffix='p2a-v1'
+  job 17: call_id=fc-01M3P4AJ2K7N6RF4RN4QY4B8QK run_name_suffix='p2a-v1'
+  job 18: call_id=fc-01M3P4AJ6WMHZDX105NK94V2HS run_name_suffix='p2a-v1'
+  job 19: call_id=fc-01M3P4AJAXHMNAHSX14NC4TFAJ run_name_suffix='p2a-v1'
+  job 20: call_id=fc-01M3P4AJEHBY62JECYMYGY8DHD run_name_suffix='p2a-v1'
+[modal-client] 2026-09-29T01:26:09-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-xYXwBXaMbaXsc9wT4RaRm4
+=== p2_scaling_law_reliability b
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-U6nPnX7DLdziSYvFWX3K32
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 11 Modal training job(s) app='dl_alchemy-20260929-082612' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4B2AKV757353G3HRRZGYH run_name_suffix='p2b-v1'
+  job 1: call_id=fc-01M3P4B2EXF2APW15S2JW8AAXF run_name_suffix='p2b-v1'
+  job 2: call_id=fc-01M3P4B2K8KYXV3RP24WEQZEKX run_name_suffix='p2b-v1'
+  job 3: call_id=fc-01M3P4B2Q6Z371529SQX54VVY2 run_name_suffix='p2b-v1'
+  job 4: call_id=fc-01M3P4B2V828AFH7WDGZ4AV1HE run_name_suffix='p2b-v1'
+  job 5: call_id=fc-01M3P4B2ZBF4EW20ZAAK8BK4HA run_name_suffix='p2b-v1'
+  job 6: call_id=fc-01M3P4B34AGEAVTH79H9NN7T3D run_name_suffix='p2b-v1'
+  job 7: call_id=fc-01M3P4B38RXZQDDBR5VQVTJCFE run_name_suffix='p2b-v1'
+  job 8: call_id=fc-01M3P4B3CPW50FBX22YDG55B5R run_name_suffix='p2b-v1'
+  job 9: call_id=fc-01M3P4B3GGRPPWWQ4Y97EHMWHN run_name_suffix='p2b-v1'
+  job 10: call_id=fc-01M3P4B3M6M9891Y8YB8QVPHGF run_name_suffix='p2b-v1'
+[modal-client] 2026-09-29T01:26:26-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-U6nPnX7DLdziSYvFWX3K32
+=== p2_scaling_law_reliability c
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-xvwGPGTghJMLvHtiQuEems
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 12 Modal training job(s) app='dl_alchemy-20260929-082630' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4BKC36YG41R73301KENZ8 run_name_suffix='p2c-v1'
+  job 1: call_id=fc-01M3P4BKFXKJWRKCZGXKVQZMWN run_name_suffix='p2c-v1'
+  job 2: call_id=fc-01M3P4BKKW67Y0XN5MDYX87R64 run_name_suffix='p2c-v1'
+  job 3: call_id=fc-01M3P4BKQJNB1VF5HX8TVGJX8W run_name_suffix='p2c-v1'
+  job 4: call_id=fc-01M3P4BKWMZSFJFDHH9TM8ABD9 run_name_suffix='p2c-v1'
+  job 5: call_id=fc-01M3P4BM0RY54RZH3GKCJTKYT5 run_name_suffix='p2c-v1'
+  job 6: call_id=fc-01M3P4BM4PCAM1MF7SHW1SKSF4 run_name_suffix='p2c-v1'
+  job 7: call_id=fc-01M3P4BM8SJRDM35V3DSC9AC6C run_name_suffix='p2c-v1'
+  job 8: call_id=fc-01M3P4BMCSGNGPZEY88DD9W6A4 run_name_suffix='p2c-v1'
+  job 9: call_id=fc-01M3P4BMGX94KGEZZ5KX8MQA1X run_name_suffix='p2c-v1'
+  job 10: call_id=fc-01M3P4BMN40EJ20FBWBFRRR7BW run_name_suffix='p2c-v1'
+  job 11: call_id=fc-01M3P4BMSA25CJDT30Q3HR7S79 run_name_suffix='p2c-v1'
+[modal-client] 2026-09-29T01:26:44-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-xvwGPGTghJMLvHtiQuEems
+=== p3_measuring_variation a
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-Kao7RbTz04pC3hUAzCHCnv
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 3 Modal training job(s) app='dl_alchemy-20260929-082646' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4C38QPDAYMA9F5CAF62Q5 run_name_suffix='p3a-v1'
+  job 1: call_id=fc-01M3P4C3CPE5QF9X2JQ7Y8SVMB run_name_suffix='p3a-v1'
+  job 2: call_id=fc-01M3P4C3GKTJXFJEZC8T0NSXKE run_name_suffix='p3a-v1'
+[modal-client] 2026-09-29T01:26:59-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-Kao7RbTz04pC3hUAzCHCnv
+=== p3_measuring_variation b-h100
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-BmyDgMJXmN3XG0THpH6WyC
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 1 Modal training job(s) app='dl_alchemy-20260929-082700' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4CHYT47045C2PE0EQ4SBG run_name_suffix='p3b-v1-h100-replicate3'
+[modal-client] 2026-09-29T01:27:14-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-BmyDgMJXmN3XG0THpH6WyC
+=== p3_measuring_variation c
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-WcpRc1eJa0W7lqjukdIo9G
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 9 Modal training job(s) app='dl_alchemy-20260929-082716' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4D14MRGTE6WXFZ8H39YFX run_name_suffix='p3c-v1'
+  job 1: call_id=fc-01M3P4D18KYN8Z6WN1GYA7Q275 run_name_suffix='p3c-v1'
+  job 2: call_id=fc-01M3P4D1EN8SAF71Z6X5DQ1Y8N run_name_suffix='p3c-v1'
+  job 3: call_id=fc-01M3P4D1JZXXPYZWQ4DAF7GS64 run_name_suffix='p3c-v1'
+  job 4: call_id=fc-01M3P4D1Q36QQ3N5XTB2KN8RK9 run_name_suffix='p3c-v1'
+  job 5: call_id=fc-01M3P4D1V624PYX4ZWR9155XYP run_name_suffix='p3c-v1'
+  job 6: call_id=fc-01M3P4D1Z1FTEMJ34Q5RBMFV4J run_name_suffix='p3c-v1'
+  job 7: call_id=fc-01M3P4D22YBN6M9FPPDP6THTP1 run_name_suffix='p3c-v1'
+  job 8: call_id=fc-01M3P4D26WFYH04QZMS2YRNKNJ run_name_suffix='p3c-v1'
+[modal-client] 2026-09-29T01:27:30-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-WcpRc1eJa0W7lqjukdIo9G
+=== p5_loss_curve_augury a
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-qI1A3I97MebCewoN2v2tAq
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 5 Modal training job(s) app='dl_alchemy-20260929-082733' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4DGY0R52105QWEPJ1RXNK run_name_suffix='p5-v1'
+  job 1: call_id=fc-01M3P4DH1TBM1Y1ZXQ3RCCQBCX run_name_suffix='p5-v1'
+  job 2: call_id=fc-01M3P4DH6H89849R8WD97H4HAK run_name_suffix='p5-v1'
+  job 3: call_id=fc-01M3P4DHAWGBTXSDEMJAD0RZHQ run_name_suffix='p5-v1'
+  job 4: call_id=fc-01M3P4DHEVBZNDH6FYEVZE2SJ7 run_name_suffix='p5-v1'
+[modal-client] 2026-09-29T01:27:46-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-qI1A3I97MebCewoN2v2tAq
+=== p6_activation_gradient_norms c
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-NjqP0aUgUqg05CWNuwf5s2
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 3 Modal training job(s) app='dl_alchemy-20260929-082748' environment='cs312-juntong' gpu='H100' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4DZKD4XEA2YMNGXCHRKBH run_name_suffix='p6-v1'
+  job 1: call_id=fc-01M3P4DZQP9EGNBA6EMXT2X628 run_name_suffix='p6-v1'
+  job 2: call_id=fc-01M3P4DZWFVZQE853JXN7R7D3E run_name_suffix='p6-v1'
+[modal-client] 2026-09-29T01:28:01-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-NjqP0aUgUqg05CWNuwf5s2
+=== p3_measuring_variation b-a100
+✓ Initialized. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-GCM1YsjZy9ATTSkUNDRsbd
+✓ Created objects.
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments/modal_train.py
+├── 🔨 Created mount /Users/juntongshi/Desktop/assignments
+└── 🔨 Created function _run_training.
+Launched 2 Modal training job(s) app='dl_alchemy-20260929-082803' environment='cs312-juntong' gpu='A100-80GB' detached=True max_parallel_runs=2.
+  job 0: call_id=fc-01M3P4EEEGNZ3QR3CPZPQ84STD run_name_suffix='p3b-v1-a100-replicate1'
+  job 1: call_id=fc-01M3P4EEJ5GYXTVW3CGQB7ZWYK run_name_suffix='p3b-v1-a100-replicate2'
+[modal-client] 2026-09-29T01:28:16-0700 Timed out waiting for final app logs.
+✓ App completed. View run at https://modal.com/apps/cs312-f26/cs312-juntong/ap-GCM1YsjZy9ATTSkUNDRsbd
+All launches submitted.
