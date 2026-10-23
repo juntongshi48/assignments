@@ -11,7 +11,7 @@ dependencies = [
     "numpy",
     "requests",
     "sentencepiece",
-    "setuptools>=81.0.0",
+    "setuptools",  # Triton 3.2 imports this when torch.compile starts.
     "torch==2.6.0",
     "tqdm",
     "wandb==0.31.0",
