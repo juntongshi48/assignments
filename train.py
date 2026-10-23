@@ -743,7 +743,11 @@ def train(config):
         import wandb
 
         if checkpointer.enabled and wandb_run_id is None:
-            wandb_run_id = wandb.util.generate_id()
+            # wandb >= 0.18 moved generate_id out of wandb.util.
+            generate_id = getattr(wandb.util, "generate_id", None)
+            if generate_id is None:
+                from wandb.sdk.lib.runid import generate_id
+            wandb_run_id = generate_id()
             checkpointer.write_wandb_run_state(
                 wandb_run_id,
                 wandb_entity=config.wandb_entity,
