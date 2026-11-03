@@ -115,6 +115,12 @@ def _run_training(
             "WANDB_API_KEY=YOUR_WANDB_API_KEY`."
         )
     try:
+        import torch
+
+        # A reused container keeps dynamo caches from earlier inputs. Models whose
+        # compiled code objects are shared (e.g. A4's editable RNN cells) would
+        # otherwise accumulate stale entries until RecompileLimitExceeded.
+        torch._dynamo.reset()
         start_time = time.perf_counter()
         train(config)
         elapsed_seconds = time.perf_counter() - start_time
